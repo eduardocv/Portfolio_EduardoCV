@@ -198,7 +198,7 @@ footer {
 /* tabela responsiva */
 
 table {
-    width: 100%;
+    width: auto;
     border-collapse: collapse;
 }
 
@@ -218,6 +218,7 @@ img {
 
 @media (max-width: 600px) {
     img {
+        background-size: auto;
         width: 100%; /* Para ajustar a largura da imagem à tela estreita */
     }
 }
