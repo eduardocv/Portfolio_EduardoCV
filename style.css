@@ -126,6 +126,20 @@ main > article>  {
     background-image: linear-gradient(to left, var(--cor1), transparent);
 }
 
+
+
+main img {
+    background-color: var(--cor4);
+    padding: 20px;
+    display: block; /* Remove margens de linha da imagem */
+    margin: 0 auto; /* Centraliza verticalmente */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto;
+    width: auto;
+    position: relative;
+        
+}
+
 main p {
     font-family: var(--fonte-padrao);
     font-size: 1em;
@@ -138,11 +152,6 @@ main p {
 main strong {
     color: var(--cor5);
     font-weight: bold;
-}
-
-main img {
-    width: 25%;
-    position: relative; /*testar absolute*/
 }
 
 li {
@@ -184,6 +193,48 @@ footer {
     padding: 1px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;    
+}
+
+/* tabela responsiva */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 10px solid var(--cor5);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr:after {
+        content: normal;
+        display: table;
+        clear: both;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        margin-bottom: 0px;
+    }
+
+    td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
 }
 
 footer a {    
