@@ -203,39 +203,26 @@ table {
 }
 
 table, th, td {
-    border: 10px solid var(--cor5);
+    border: 5px solid var(--cor5);
 }
 
 th, td {
-    padding: 10px;
-    text-align: left;
+    padding: 15px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 600px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-
-    tr:after {
-        content: normal;
-        display: table;
-        clear: both;
-    }
-
-    th {
-        display: none;
-    }
-
-    td {
-        margin-bottom: 0px;
-    }
-
-    td:before {
-        content: attr(data-label);
-        float: left;
-        font-weight: bold;
+    img {
+        width: 100%; /* Para ajustar a largura da imagem à tela estreita */
     }
 }
+
+/* Acaba a estilização da tabela */
 
 footer a {    
     color: white;
