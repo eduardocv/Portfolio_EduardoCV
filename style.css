@@ -100,7 +100,7 @@ main h1 {
     font-size: 2em;
 }
 
-main  h2 {
+main h2 {
     font-family: var(--fonte-destaque1);
     font-weight: normal;
     font-size: 1.7em;
