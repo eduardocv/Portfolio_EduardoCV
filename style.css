@@ -126,8 +126,6 @@ main > article>  {
     background-image: linear-gradient(to left, var(--cor1), transparent);
 }
 
-
-
 main img {
     background-color: var(--cor4);
     padding: 20px;
