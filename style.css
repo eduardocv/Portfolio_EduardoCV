@@ -197,11 +197,11 @@ footer {
 
 table {
     width: auto;
-    border-collapse: collapse;
+    border-collapse: separate;
 }
 
 table, th, td {
-    border: 5px solid var(--cor5);
+    border: 3px solid var(--cor5);
 }
 
 th, td {
